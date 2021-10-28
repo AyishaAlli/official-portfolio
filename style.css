@@ -2,9 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    scroll-behavior: smooth;
+}
+body{
     background-color: black;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 
@@ -13,25 +15,26 @@
     display: none;
 }
 
+.notHidden{
+    display: flex;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    
+    padding: 20px 20px 0px 20px;
     color: white;
 }
-/*Dropdown Menu*/
 
 .hamburger{
-    display: none;
     color: black;
-    
 }
 
-nav ul{
+.navList{
     display: flex;
 }
+
 nav ul a{
     color: white;
     list-style: none;
@@ -47,7 +50,7 @@ nav ul a li:hover{
 
 
 @media only screen and (max-width: 650px) {
-nav ul{
+.navList{
     position: fixed;
     text-align: center;
     top: 50px;
@@ -58,6 +61,8 @@ nav ul{
     transition: 0.5s;
     box-shadow: 0 10px 27px rgba(0,0,0,0.05);
     right: 10px;
+    color: black;
+    
 
 }
 
