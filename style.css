@@ -9,6 +9,10 @@
 
 
 /*NAVIGATION BAR*/
+.hidden{
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -21,6 +25,8 @@ nav {
 
 .hamburger{
     display: none;
+    color: black;
+    
 }
 
 nav ul{
@@ -49,10 +55,12 @@ nav ul{
     background-color: black;
     width: 100%;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.5s;
     box-shadow: 0 10px 27px rgba(0,0,0,0.05);
     right: 10px;
+
 }
+
 nav ul li{
     padding:15px 0px 15px 0px;
     background-color: black;
@@ -60,8 +68,12 @@ nav ul li{
     border-top: 1px solid white;
     
 }
+nav ul li:hover {
+    color:turquoise;
+}
 .hamburger{
     display: block;
+    color: white;
 }
 
 }
