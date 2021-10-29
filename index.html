@@ -5,22 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayisha Alli | Portfolio Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/97364d0a43.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <nav>
         <h1>AyishaAlli.</h1>
         <i class="hidden hamburger fas fa-bars"></i>
-        <ul class="navList">
-            <a href="#"><li>ABOUT ME</li></a>
-            <a href="#"><li>PROJECTS</li></a>
-            <a href="#"><li>CONTACT ME</li></a>
+        <ul class="navList hidden">
+            <a href="#aboutMeSection"><li>ABOUT ME</li></a>
+            <a href="#projects"><li>PROJECTS</li></a>
+            <a href="#contactMe"><li>CONTACT ME</li></a>
         </ul>
     </nav>
-    <div id="aboutMeSection"></div>
-    <div id="uxuiProjects"></div>
-    <div id="frontendProjects"></div>
+    <div class="aboutMeSection">
+            <h2 class="hello">Hello!</h2>
+            <p>Hey there, Thank you for stumbling across my website. My name is Ayisha Alli and I am a Junior Software Developer</p>
+    </div>
+        
+    </div>
+
+    <div id="projects">
+        <h2 id="projectsTitle">PROJECTS</h2>
+        <div class="row">
+            <div class="col-md">
+                <figure><img src="/photos/screenshot.jpg" alt="Order Summary Card screenshot" width="400px" height="400px"><figcaption>Order Summary Card Replica</figcaption></figure>
+            </div>
+            <div class="col-md">
+                <figure><img src="/photos/screenshot.jpg" alt="Order Summary Card screenshot" width="400px" height="400px"><figcaption>Order Summary Card Replica</figcaption></figure>
+            </div>
+            <div class="col-md">
+                <figure><img src="/photos/screenshot.jpg" alt="Order Summary Card screenshot" width="400px" height="400px"><figcaption>Order Summary Card Replica</figcaption></figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <figure><img src="/photos/screenshot.jpg" alt="Order Summary Card screenshot" width="400px" height="400px"><figcaption>Order Summary Card Replica</figcaption></figure>
+            </div>
+            <div class="col-md">
+                <figure><img src="/photos/screenshot.jpg" alt="Order Summary Card screenshot" width="400px" height="400px"><figcaption>Order Summary Card Replica</figcaption></figure>
+            </div>
+            <div class="col-md">
+                <figure><img src="/photos/screenshot.jpg" alt="Order Summary Card screenshot" width="400px" height="400px"><figcaption>Order Summary Card Replica</figcaption></figure>
+            </div>
+        </div>
+        
+        </div>
     <div id="ContactMe"></div>
     <script src="/app.js"></script>
 </body>
