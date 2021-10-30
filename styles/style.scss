@@ -9,8 +9,7 @@
 body{
     background-color: black;
     font-family: sans-serif;
-    color: white;
-    
+    color: white; 
 }
 
 
@@ -121,13 +120,17 @@ div h2 span:hover{
 
 /*PROJECTS BUTTON STYLING*/
 #projectBtn{
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
     background-color: transparent;
     border: 1px solid turquoise;
     padding: 10px 25px 10px 25px;
+    text-align: center;
     cursor: pointer;
     color:turquoise;
     text-decoration: none;
-
+    
 }
 
 
