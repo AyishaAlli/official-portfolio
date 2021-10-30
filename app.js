@@ -23,6 +23,6 @@ $('.navList').addClass('active').removeClass('reverse_anim')
 $('.close').addClass('show')
 });
 $('.close').on('click', () => {
-$('.navList').removeClass('active').addClass('reverse_anim')
+$('.navList').removeClass('active')
 $('.close').removeClass('show')
 });
