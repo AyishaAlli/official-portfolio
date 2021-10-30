@@ -1,4 +1,4 @@
-/* VANILLA JAVASCRIPT WAY
+//VANILLA JAVASCRIPT WAY
 
 const HamburgerMenu =  document.querySelector('.hamburger');
 const navList = document.querySelector('.navList');
@@ -14,10 +14,10 @@ exitBtn.addEventListener('click', function toggleMenu(){
     navList.classList.remove('active');
     exitBtn.classList.remove('show');
 })
-*/
+
 
 // JQUERY
-
+/*
 $('.hamburger').on('click', () => {
 $('.navList').addClass('active').removeClass('reverse_anim')
 $('.close').addClass('show')
@@ -26,3 +26,4 @@ $('.close').on('click', () => {
 $('.navList').removeClass('active')
 $('.close').removeClass('show')
 });
+*/
