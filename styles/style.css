@@ -42,10 +42,11 @@ nav {
 
 .close {
   position: absolute;
-  color: green;
+  color: black;
   top: 1.490rem;
   right: 1.134rem;
   display: none;
+  z-index: 2;
 }
 
 .navList {
@@ -80,6 +81,7 @@ nav ul a li:hover {
     height: 100vh;
     -webkit-transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
     transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+    z-index: 1;
   }
   nav ul {
     display: -webkit-box;
@@ -98,12 +100,13 @@ nav ul a li:hover {
     height: 100vh;
   }
   nav ul a li {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
   }
   nav ul a {
     font-size: 1.5rem;
     background: -webkit-linear-gradient(45deg, #087e47 0%, #15bed4 50%, rgba(11, 99, 231, 0.685) 100%);
     background-clip: text;
+    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -160,9 +163,13 @@ div h2 span:hover {
 
 .hello {
   font-family: 'Dancing Script', cursive;
-  font-size: 180px;
+  font-size: 160px;
   padding: 20px;
   color: white;
+}
+
+#introParagraph {
+  font-weight: 700;
 }
 
 .text {
