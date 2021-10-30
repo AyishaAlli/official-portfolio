@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
   background-color: black;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   color: white;
 }
 
@@ -22,6 +25,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+h1 {
+  font-family: sans-serif;
 }
 
 nav {
@@ -50,7 +57,6 @@ nav {
 
 nav ul a li {
   margin-left: 15px;
-  text-decoration: none;
   list-style: none;
   color: white;
 }
@@ -59,7 +65,7 @@ nav ul a li:hover {
   color: turquoise;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .navList {
     position: fixed;
     text-align: center;
@@ -224,10 +230,65 @@ figcaption {
 
 figcaption a {
   border: 1px solid turquoise;
-  background-color: turquoise;
-  color: black;
+  background-color: transparent;
+  color: turquoise;
   width: 120px;
   margin-bottom: 10px;
   margin-top: 5px;
+  text-decoration: none;
+}
+
+figcaption a:hover {
+  color: white;
+}
+
+/*PHONE SCREEN*/
+@media only screen and (max-width: 750px) {
+  figure img {
+    width: 300px;
+    height: 300px;
+  }
+  figcaption {
+    width: 300px;
+  }
+}
+
+/*CONTACT ME SECTION*/
+#contactMe {
+  background-color: #09776c;
+  margin-top: 30px;
+  color: black;
+}
+
+#ConnectWithMeTitle {
+  padding-top: 25px;
+}
+
+.socialMediaIcons {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.socialMediaIcons a {
+  color: black;
+  margin: 20px;
+}
+
+.socialMediaIcons a:hover {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
