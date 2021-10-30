@@ -39,14 +39,12 @@ nav {
     display: flex;
 }
 
-nav ul a{
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    
-}
+
 nav ul a li {
     margin-left: 15px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
     
 }
 nav ul a li:hover{
