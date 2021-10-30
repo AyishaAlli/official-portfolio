@@ -222,9 +222,11 @@ figcaption a:hover{
 
 /*CONTACT ME SECTION*/
 #contactMe{
-    background-color: rgb(9, 119, 108);
-    margin-top: 30px;
-    color: black;
+   border-top: 1px solid white;
+   width: 500px;
+   margin: auto;
+margin-top: 70px;
+   color: white;
     
 
 }
@@ -238,13 +240,13 @@ figcaption a:hover{
     
 }
 .socialMediaIcons a{
-    color: black;
+    color: white;
     margin: 20px;
 }
 .socialMediaIcons a:hover{
     font-size:15px;
     text-decoration: none;
-    color: white;
+    color: turquoise;
 }
 footer{
     justify-content: center;
