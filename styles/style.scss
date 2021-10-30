@@ -119,6 +119,10 @@ div h2 span:hover{
 
 
 /*PROJECTS BUTTON STYLING*/
+.row{
+    max-width: 2000px;
+    margin: auto;
+}
 #projectBtn{
     color:turquoise;
     cursor: pointer;
@@ -128,7 +132,6 @@ div h2 span:hover{
     transition-duration: .6s;
     transition-timing-function: ease;
     background-color: transparent;
-    
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -167,4 +170,30 @@ transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
 
 #projectsTitle{
     text-align: center;
+}
+figure img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+figcaption{
+    background-color: black;
+    border: 1px solid white;
+    border-top: none;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+figcaption a{
+    border: 1px solid turquoise;
+    background-color: turquoise;
+    color: black;
+    width: 120px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
