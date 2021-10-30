@@ -86,6 +86,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [SASS guide](https://sass-lang.com/guide) - This is an amazing article which helped me finally understand SASS. I'd recommend it to anyone still learning this concept.
+- [Varun Rao's Codepen](https://codepen.io/varoonrao/pen) - This inspired my navbar for mobile view!
 
 
 ## Author
