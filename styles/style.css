@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #1f1f1f;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: white;
@@ -74,7 +74,7 @@ nav ul a li:hover {
             clip-path: circle(0% at 96.5% 4%);
     opacity: 0.6;
     position: absolute;
-    background: #2c2929;
+    background: #615e5e;
     top: 0;
     left: 0;
     width: 100%;
@@ -215,7 +215,7 @@ div h2 span:hover {
 }
 
 #projectBtn:hover {
-  background-color: black;
+  background-color: transparent;
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -338,7 +338,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
   color: white;
   padding: 20px;
 }
