@@ -198,7 +198,7 @@ div h2 span:hover {
 
 #projectBtn svg {
   position: absolute;
-  background-color: tr;
+  background-color: transparent;
   left: 0px;
   top: 0;
   width: 100%;
@@ -226,6 +226,21 @@ div h2 span:hover {
   stroke-dashoffset: 48;
   -webkit-transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media only screen and (max-width: 750px) {
+  #projectBtn:hover {
+    -webkit-transition: none;
+    transition: none;
+    border: 1px solid turquoise;
+  }
+  #projectBtn:hover rect {
+    -webkit-transition: none;
+    transition: none;
+    stroke-width: 0;
+    stroke-dasharray: 0, 0;
+    stroke-dashoffset: 0;
+  }
 }
 
 /*POROJECTS*/
