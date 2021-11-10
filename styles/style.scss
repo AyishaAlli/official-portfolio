@@ -1,313 +1,293 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
-body{
-    background-color: rgb(31, 31, 31);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: white; 
+body {
+  background-color: rgb(31, 31, 31);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
 }
-
 
 /*NAVIGATION BAR*/
-h1{
-    font-family: sans-serif;
+h1 {
+  font-family: sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px 0px 20px;
-    color: white;
-    
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  color: white;
 }
 
-
-.hamburger{
-    color: white;
-    display: none;
+.hamburger {
+  color: white;
+  display: none;
 }
 
-.close{
-    position: absolute;
-    color: black;
-    top: 1.490rem;
-    right: 1.134rem;
-    display: none;
-    z-index: 2;
+.close {
+  position: absolute;
+  color: black;
+  top: 1.49rem;
+  right: 1.134rem;
+  display: none;
+  z-index: 2;
 }
 
-.navList{
-    display: flex;
+.navList {
+  display: flex;
 }
 
 nav ul a li {
-    margin-left: 15px;
-    list-style: none;
-    color: white;
-    
+  margin-left: 15px;
+  list-style: none;
+  color: white;
 }
-nav ul a li:hover{
-    color: turquoise;
+nav ul a li:hover {
+  color: turquoise;
 }
-
 
 @media only screen and (max-width: 750px) {
-    .hamburger{
-        display: block;
-    }
-    
-    
-    .navList {
-        clip-path: circle(0% at 96.5% 4%);
-        opacity: 0.6;
-        position: absolute;
-        background: rgb(97, 94, 94);
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
-        z-index: 1; 
-    
-    }
-    nav ul {
+  .hamburger {
+    display: block;
+  }
+
+  .navList {
+    clip-path: circle(0% at 96.5% 4%);
+    opacity: 0.6;
+    position: absolute;
+    background: rgb(97, 94, 94);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+    z-index: 1;
+  }
+  nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    }
+  }
 
-    nav ul a li {
-        padding: 1rem 1rem;
-    }
-  
-    nav ul a {
-          font-size: 1.5rem;
-          color: white;          
-    }
-   
+  nav ul a li {
+    padding: 1rem 1rem;
+  }
 
+  nav ul a {
+    font-size: 1.5rem;
+    color: white;
+  }
 }
 
 nav li {
-    animation: animateIn 360ms ease-in-out
-    calc(var(--animation-order) * 100ms) both;
-    }
+  animation: animateIn 360ms ease-in-out calc(var(--animation-order) * 100ms)
+    both;
+}
 
 .active {
-    clip-path: circle(140% at 96.5% 4%);
-    transition: all 0.7s cubic-bezier(0.23, 0.93, 0.23, 0.93);
-    opacity: 100%;
-    }
-     
-.reverse_anim {
-    clip-path: circle(0% at 96.5% 4%);
-    opacity: 0.6;
-    transition: all 0.4s cubic-bezier(0.23, 0.93, 0.23, 0.93);
-    }
-.show{
-    display: block;
+  clip-path: circle(140% at 96.5% 4%);
+  transition: all 0.7s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+  opacity: 100%;
 }
-    
 
+.reverse_anim {
+  clip-path: circle(0% at 96.5% 4%);
+  opacity: 0.6;
+  transition: all 0.4s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+}
+.show {
+  display: block;
+}
 
 /*ABOUT ME SECTION*/
-div h2{
-    display: flex;
-    justify-content: center;
+div h2 {
+  display: flex;
+  justify-content: center;
 }
-div h2 span:hover{
-    transform: scaleY(1.5);
-    color: turquoise;
-}
-
-.aboutMeSection{
-    text-align: center;
-    max-width: 600px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 200px;
+div h2 span:hover {
+  transform: scaleY(1.5);
+  color: turquoise;
 }
 
-.hello{
-    font-family: 'Dancing Script', cursive;
-    font-size:160px;
-    padding: 20px;
-    color: white;
-}
-#introParagraph{
-    font-weight: 700;
-}
-.text{
-    margin-bottom: 50px;
+.aboutMeSection {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
+.hello {
+  font-family: "Dancing Script", cursive;
+  font-size: 160px;
+  padding: 20px;
+  color: white;
+}
+#introParagraph {
+  font-weight: 700;
+}
+.text {
+  margin-bottom: 50px;
+}
 
 /*PROJECTS BUTTON STYLING*/
 
-.row{
-    max-width: 2000px;
-    margin: auto;
-    text-align: center;
+.row {
+  max-width: 2000px;
+  margin: auto;
+  text-align: center;
 }
-#projectBtn{
-    color:turquoise;
-    cursor: pointer;
-    padding: 10px 25px 10px 25px;
-    position: relative;
-    transition-property: all;
-    transition-duration: .6s;
-    transition-timing-function: ease;
+#projectBtn {
+  color: turquoise;
+  cursor: pointer;
+  padding: 10px 25px 10px 25px;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  svg {
+    position: absolute;
     background-color: transparent;
-    text-align: center;
-    text-decoration: none;
+    left: 0px;
+    top: 0;
     width: 100%;
-    svg{
-        position: absolute;
-        background-color: transparent;
-        left: 0px;
-        top: 0;
-        width: 100%;
-        height: 37px;
-    }
-    rect{
-        fill: none;
-        stroke: turquoise;
-        stroke-width: 2;
-        stroke-dasharray: 422, 0;
-        transition: all 0.35s linear;
-    }
-    
+    height: 37px;
+  }
+  rect {
+    fill: none;
+    stroke: turquoise;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
 }
 
-#projectBtn:hover{
-background-color: transparent;
-font-weight: 900;
-letter-spacing: 1px;
-    rect{
-stroke-width: 5;
-stroke-dasharray: 15, 310;
-stroke-dashoffset: 48;
-transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
-}}
-
-@media only screen and(max-width: 750px){
-    #projectBtn:hover{
-        transition: none;
-        border: 1px solid turquoise;
-        rect{
-            transition: none;
-            stroke-width: 0;
-            stroke-dasharray: 0, 0;
-            stroke-dashoffset: 0;
-        }
-    }
+#projectBtn:hover {
+  background-color: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
 }
 
-/*POROJECTS*/
-
-#projectsTitle{
-    text-align: center;
-}
-figure img{
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-figcaption{
-    background-color: black;
-    border: 1px solid white;
-    border-top: none;
-    width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-figcaption a{
+@media only screen and(max-width: 750px) {
+  #projectBtn:hover {
+    transition: none;
     border: 1px solid turquoise;
-    background-color: transparent;
-    color: turquoise;
-    width: 120px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    text-decoration: none;
-    
+    rect {
+      transition: none;
+      stroke-width: 0;
+      stroke-dasharray: 0, 0;
+      stroke-dashoffset: 0;
+    }
+  }
 }
-figcaption a:hover{
-    color: white;
+/*PROJECTS (HOMEPAGE)*/
+#projects .projectContainer {
+  display: flex;
+  justify-content: center;
+}
+#projects .projectGroup {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+}
+/*POROJECTS PAGE */
+
+#projectsTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+figcaption {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+figcaption a {
+  border: 1px solid turquoise;
+  background-color: transparent;
+  color: turquoise;
+  width: 120px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+figcaption a:hover {
+  color: white;
 }
 /*PHONE SCREEN*/
 @media only screen and (max-width: 750px) {
-    figure img{
-        width: 300px;
-        height: 300px;
-        
-    }
-    figcaption{
-        width: 300px;
-        
-    }
+  figure img {
+    width: 300px;
+    height: 300px;
+  }
+  figcaption {
+    width: 300px;
+  }
 }
 
 /*CONTACT ME SECTION*/
-#contactMe{
-   border-top: 1px solid white;
-   width: 500px;
-   margin: auto;
-   margin-top: 70px;
-   color: white;
-    
+#contactMe {
+  border-top: 1px solid white;
+  width: 500px;
+  margin: auto;
+  margin-top: 70px;
+  color: white;
+}
+#ConnectWithMeTitle {
+  padding-top: 25px;
+}
+.socialMediaIcons {
+  text-align: center;
+  padding: 100px 0px;
+}
+.socialMediaIcons a {
+  color: white;
+  margin: 20px;
+}
+.socialMediaIcons a:hover {
+  font-size: 15px;
+  text-decoration: none;
+  color: turquoise;
+}
+footer {
+  justify-content: center;
+  display: flex;
 
-}
-#ConnectWithMeTitle{
-    padding-top: 25px;
-    
-}
-.socialMediaIcons{
-    text-align: center;
-    padding: 100px 0px;
-    
-}
-.socialMediaIcons a{
-    color: white;
-    margin: 20px;
-}
-.socialMediaIcons a:hover{
-    font-size:15px;
-    text-decoration: none;
-    color: turquoise;
-}
-footer{
-    justify-content: center;
-    display: flex;
-    
-    color: white;
-    padding: 20px;
+  color: white;
+  padding: 20px;
 }
 /*PHONE SCREEN*/
 @media only screen and (max-width: 750px) {
-    #contactMe{
-        width: 300px;
-    }
-    .socialMediaIcons{
-        display: flex;
-        flex-direction: column;
-    }
-
+  #contactMe {
+    width: 300px;
+  }
+  .socialMediaIcons {
+    display: flex;
+    flex-direction: column;
+  }
 }
