@@ -1,4 +1,4 @@
-/*
+
 //VANILLA JAVASCRIPT WAY
 
 const HamburgerMenu =  document.querySelector('.hamburger');
@@ -6,6 +6,7 @@ const navList = document.querySelector('.navList');
 const exitBtn = document.querySelector('.close');
 const projectsBtn = document.querySelector('.projectBtn');
 const contactBtn = document.querySelector('.contactBtn');
+
 
 HamburgerMenu.addEventListener('click', function toggleMenu(){
     navList.classList.add('active');
@@ -23,7 +24,7 @@ projectsBtn.addEventListener('click', function(){
 contactBtn.addEventListener('click', function(){
     navList.classList.remove('active');
 })
-*/
+/*
 
 // JQUERY
 
@@ -45,4 +46,4 @@ $('.contactBtn').on('click', () => {
     $('.navList').removeClass('active')
     $('.close').removeClass('show')
 })
-
+*/
