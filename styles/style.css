@@ -329,8 +329,8 @@ div h2 span:hover {
 }
 
 .projectItem {
-  width: 400px;
-  height: 600px;
+  max-width: 400px;
+  height: auto;
   margin: 5px;
   -ms-flex-preferred-size: 33.3%;
       flex-basis: 33.3%;
@@ -369,6 +369,14 @@ figcaption a:hover {
 }
 
 /*PHONE SCREEN*/
+@media only screen and (max-width: 400px) {
+  #projectPageTitle {
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
+  }
+}
+
 /*CONTACT ME SECTION*/
 #contactMe {
   border-top: 1px solid white;
