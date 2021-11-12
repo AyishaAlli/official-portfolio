@@ -1,11 +1,11 @@
 
 //VANILLA JAVASCRIPT WAY
 
-const HamburgerMenu =  document.getElementsByClassName('.hamburger');
-const navList = document.getElementsByClassName('.navList');
-const exitBtn = document.getElementsByClassName('.close');
-const projectsBtn = document.getElementsByClassName('.projectBtn');
-const contactBtn = document.getElementsByClassName('.contactBtn');
+const HamburgerMenu =  document.querySelector('.hamburger');
+const navList = document.querySelector('.navList');
+const exitBtn = document.querySelector('.close');
+const projectsBtn = document.querySelector('.projectBtn');
+const contactBtn = document.querySelector('.contactBtn');
 
 
 HamburgerMenu.addEventListener('click', function toggleMenu(){

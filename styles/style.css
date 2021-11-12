@@ -273,6 +273,11 @@ div h2 span:hover {
   margin: 20px;
 }
 
+#projects .projectContainer .projectGroup:hover {
+  -webkit-transform: scale3d(1.1);
+          transform: scale3d(1.1);
+}
+
 #projects .projectContainer .projectGroup p {
   text-align: center;
   display: -webkit-box;
@@ -295,6 +300,12 @@ div h2 span:hover {
 }
 
 /*POROJECTS PAGE */
+.backBtn a i {
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+}
+
 #projectPageTitle {
   text-align: center;
   font-size: 50px;
