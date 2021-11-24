@@ -342,7 +342,24 @@ footer {
 }
 
 /*SKATERWAY CASE STUDY*/
-#skaterWaySecOne img {
+#body {
+  background-image: url("/photos/backround.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#body .backBtn {
+  background-color: white;
+}
+#body .backBtn i {
+  color: black;
+  padding: 20px;
+}
+
+#sw1 img,
+#sw2 img {
   max-width: 100%;
   height: auto;
+}
+#sw2 img {
+  margin-top: 500px;
 }
