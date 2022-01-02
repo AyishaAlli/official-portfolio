@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -10,10 +11,10 @@
 }
 
 body {
-  background-color: #1f1f1f;
+  background-color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  color: white;
+  color: black;
 }
 
 /*NAVIGATION BAR*/
@@ -33,10 +34,10 @@ nav {
           align-items: center;
   padding: 20px 20px 0px 20px;
   color: white;
+  background-color: black;
 }
 
 .hamburger {
-  color: white;
   display: none;
 }
 
@@ -74,7 +75,7 @@ nav ul a li:hover {
             clip-path: circle(0% at 96.5% 4%);
     opacity: 0.6;
     position: absolute;
-    background: #615e5e;
+    background: turquoise;
     top: 0;
     left: 0;
     width: 100%;
@@ -144,8 +145,6 @@ div h2 {
 }
 
 div h2 span:hover {
-  -webkit-transform: scaleY(1.5);
-          transform: scaleY(1.5);
   color: turquoise;
 }
 
@@ -157,11 +156,10 @@ div h2 span:hover {
   margin-bottom: 200px;
 }
 
-.hello {
+.ml11 {
   font-family: "Dancing Script", cursive;
-  font-size: 160px;
-  padding: 20px;
-  color: white;
+  font-size: 100px;
+  padding: 50px;
 }
 
 #introParagraph {
@@ -174,38 +172,14 @@ div h2 span:hover {
 
 /*PROJECTS BUTTON STYLING*/
 #projectBtn {
-  color: turquoise;
-  cursor: pointer;
-  padding: 10px 25px 10px 25px;
-  position: relative;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.6s;
-          transition-duration: 0.6s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  background-color: transparent;
   text-align: center;
-  text-decoration: none;
-  width: 100%;
+  border: 1px solid black;
+  padding: 7px;
+  color: black;
 }
 
-#projectBtn svg {
-  position: absolute;
-  background-color: transparent;
-  left: 0px;
-  top: 0;
-  width: 100%;
-  height: 37px;
-}
-
-#projectBtn rect {
-  fill: none;
-  stroke: turquoise;
-  stroke-width: 2;
-  stroke-dasharray: 422, 0;
-  -webkit-transition: all 0.35s linear;
-  transition: all 0.35s linear;
+#projectBtn a {
+  text-decoration: none !important;
 }
 
 #projectBtn:hover {
@@ -214,35 +188,15 @@ div h2 span:hover {
   letter-spacing: 1px;
 }
 
-#projectBtn:hover rect {
-  stroke-width: 5;
-  stroke-dasharray: 15, 310;
-  stroke-dashoffset: 48;
-  -webkit-transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1.3s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-@media only screen and (max-width: 750px) {
-  #projectBtn:hover {
-    -webkit-transition: none;
-    transition: none;
-    border: 1px solid turquoise;
-  }
-  #projectBtn:hover rect {
-    -webkit-transition: none;
-    transition: none;
-    stroke-width: 0;
-    stroke-dasharray: 0, 0;
-    stroke-dashoffset: 0;
-  }
-}
-
 /*PROJECTS (HOMEPAGE)*/
 #frontEndApp {
   background-image: url(/photos/codescreenshot.png);
   background-size: cover;
-  -webkit-transition: background 3s ease;
-  transition: background 3s ease;
+}
+
+#uxuiCaseStudies {
+  background-image: url(/photos/uxpic.png);
+  background-size: cover;
 }
 
 #projectsTitle {
@@ -278,7 +232,12 @@ div h2 span:hover {
           transform: scale3d(1.1);
 }
 
+#projects .projectContainer .projectGroup a {
+  text-decoration: none;
+}
+
 #projects .projectContainer .projectGroup p {
+  font-family: "Bubblegum Sans", cursive;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,20 +249,23 @@ div h2 span:hover {
       -ms-flex-pack: center;
           justify-content: center;
   height: 70px;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 25px;
-  color: black;
+  color: turquoise;
   margin: auto;
-  background-color: white;
   margin-top: 170px;
   width: 90%;
 }
 
-/*POROJECTS PAGE */
+/* FRONTEND POROJECTS PAGE */
+#frontEndBody {
+  background-color: #e6e6e6;
+}
+
 .backBtn a i {
   text-decoration: none;
+  color: black;
   margin: 20px;
-  color: white;
 }
 
 #projectPageTitle {
@@ -355,9 +317,9 @@ figcaption {
 }
 
 figcaption a {
-  border: 1px solid turquoise;
+  border: 1px solid black;
   background-color: transparent;
-  color: turquoise;
+  color: black;
   width: 120px;
   margin-bottom: 10px;
   margin-top: 5px;
@@ -365,7 +327,7 @@ figcaption a {
 }
 
 figcaption a:hover {
-  color: white;
+  color: black;
 }
 
 /*PHONE SCREEN*/
@@ -383,7 +345,7 @@ figcaption a:hover {
   width: 500px;
   margin: auto;
   margin-top: 70px;
-  color: white;
+  color: black;
 }
 
 #ConnectWithMeTitle {
@@ -396,14 +358,13 @@ figcaption a:hover {
 }
 
 .socialMediaIcons a {
-  color: white;
+  color: black;
   margin: 20px;
 }
 
 .socialMediaIcons a:hover {
-  font-size: 15px;
-  text-decoration: none;
   color: turquoise;
+  text-decoration: none;
 }
 
 footer {
@@ -413,6 +374,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: black;
   color: white;
   padding: 20px;
 }
@@ -431,5 +393,31 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+/*SKATERWAY CASE STUDY*/
+#body {
+  background-image: url("/photos/backround.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#body .backBtn {
+  background-color: white;
+}
+
+#body .backBtn i {
+  color: black;
+  padding: 20px;
+}
+
+#sw1 img,
+#sw2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+#sw2 img {
+  margin-top: 500px;
 }
 /*# sourceMappingURL=style.css.map */
