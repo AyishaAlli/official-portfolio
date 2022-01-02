@@ -27,20 +27,18 @@
     </nav>
     <div class="aboutMeSection">
         <div class="text">
-            <h2 class="hello">
-                <span>H</span>
-                <span>e</span>
-                <span>l</span>
-                <span>l</span>
-                <span>o</span>
-                <span>!</span>
+            <h2 class="ml11">
+                <span class="textWrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Hello There</span>
+
+                </span>
             </h2>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+           
             <p id="introParagraph">My name is Ayisha Alli and I am a Junior Frontend Web Developer.</p>
         </div>
             <a id="projectBtn" href="#projects">
-                <svg>
-                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-              </svg>
               PROJECTS
             </a>
     </div>
@@ -53,7 +51,7 @@
             
            <a href="/frontendprojects.html"><p>FRONTEND APPLICATIONS</p></a> 
         </div>
-        <div id="uxuiCaseStudies" class="projectGroup"><p>UXUI<br>COMING SOON</p></div>
+        <div id="uxuiCaseStudies" class="projectGroup"><p>UXUI DESIGN</p></div>
         
  
         </div>
@@ -61,7 +59,7 @@
         </div>
     <div id="contactMe">
         <h2 id="ConnectWithMeTitle">
-         Contact Me
+         CONTACT ME
         </h2>
         <div class="socialMediaIcons">
          <a href="mailto:alli.ayisha1@gmail.com?subject=Hello!" target="_blank">
@@ -79,9 +77,7 @@
         </div>
          
     </div>
-    <footer>
-&copy; <p>2021 AYISHAALLI.COM</p>
-    </footer>
+    <?php $IPATH = $_SERVER['dDOCUMENT_ROOT'].'/assets/php/'; include($IPATH.'footer.html')?>
     <script src="/app.js"></script>
 </body>
 </html>
