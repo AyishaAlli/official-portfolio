@@ -190,12 +190,12 @@ div h2 span:hover {
 
 /*PROJECTS (HOMEPAGE)*/
 #frontEndApp {
-  background-image: url(/photos/codescreenshot.png);
+  background-image: url(/photos/frontendposter.png);
   background-size: cover;
 }
 
 #uxuiCaseStudies {
-  background-image: url(/photos/uxpic.png);
+  background-image: url(/photos/uxuiposter.png);
   background-size: cover;
 }
 
